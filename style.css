@@ -7,6 +7,7 @@ body,
 html {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -59,9 +60,8 @@ body {
 
 .sign-up {
     width: 62%;
-    height: 120vh;
+    height: 100vh;
     background-color: rgb(246, 247, 246);
-    padding-left: 60px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -73,4 +73,29 @@ body {
     font-size: 24px;
     color:rgb(15, 15, 15);
     font-weight: 600;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+.sign-up-form {
+    background-color: white;
+    width: 100%;
+    padding-left: 60px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    box-shadow: 0px 3px 10px -2px lightgray;
+}
+
+.row-one,
+.row-two,
+.row-three {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
