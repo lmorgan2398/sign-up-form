@@ -3,6 +3,11 @@
     src: url(fonts/Norse-Bold.otf);
 }
 
+* {
+    font-family: sans-serif;
+    color:rgb(15, 15, 15);
+}
+
 body,
 html {
     padding: 0;
@@ -40,18 +45,18 @@ body {
     justify-content: center;
     padding: 10px;
     position: relative;
-    top: 20%;
+    top: 22%;
 }
 
 .logo-image {
-    width: 100px;
+    width: 85px;
     height: 100%;
 }
 
 .logo-text {
     font-family: 'Norse Bold', serif;
     color: white;
-    font-size: 90px;
+    font-size: 85px;
     padding: 0;
     margin: 0;
     display: flex;
@@ -68,23 +73,30 @@ body {
 }
 
 .sign-up-text {
-    width: 80%;
+    width: 82%;
     font-family: sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     color:rgb(15, 15, 15);
     font-weight: 600;
-    padding-left: 60px;
+    padding-left: 50px;
     box-sizing: border-box;
+    padding-bottom: 60px;
+    padding-top: 100px;
 }
 
 .sign-up-form {
     background-color: white;
     width: 100%;
-    padding-left: 60px;
+    padding-left: 50px;
     box-sizing: border-box;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 5px;
+    padding-bottom: 10px;
     box-shadow: 0px 3px 10px -2px lightgray;
+}
+
+.form-text {
+    font-weight: 600;
+    font-size: 22px;
 }
 
 .row-one,
@@ -98,4 +110,41 @@ label {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-right: 60px;
+    padding-bottom: 16px;
+    font-size: 11px;
+    font-weight: 700;
+    color: rgb(66, 66, 66);
+    letter-spacing: 1px;
+    flex-wrap: nowrap;
+}
+
+input {
+    width: 220px;
+    height: 22px;
+    border-radius: 6px;
+    margin-top: 4px;
+    border: 2px solid #E5E7EB;
+    padding: 2px 8px;
+    font-size: 18px;
+}
+
+input:user-invalid:invalid {
+    border: 2px solid red;
+}
+
+input:focus {
+    appearance: none;
+    outline: none;
+    border: 2px solid rgb(0, 89, 206);
+    box-shadow: 0px 0px 5px -2px;
+}
+
+input + span::after {
+    content: 'required';
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    top: -45px;
+    right: -188px;
 }
