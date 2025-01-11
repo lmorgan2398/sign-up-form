@@ -147,7 +147,7 @@ input {
     font-size: 14px;
 }
 
-input:user-invalid:invalid {
+input:user-invalid {
     border: 2px solid red;
 }
 

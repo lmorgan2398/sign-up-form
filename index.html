@@ -29,7 +29,7 @@
                     <p class="form-text">Let's do this!</p>
                     <div class="row-one">
                         <label for="first-name">FIRST NAME
-                            <input type="text" name="first-name" id="first-name" required>
+                            <input type="text" name="first-name" id="first-name" required pattern="[A-Za-z\-' ]+">
                             <span></span>
                         </label>
                         <label for="last-name">LAST NAME
@@ -43,7 +43,7 @@
                             <span></span>
                         </label>
                         <label for="phone">PHONE NUMBER
-                            <input type="tel" name="phone" id="phone">
+                            <input type="tel" name="phone" id="phone" pattern="^[0-9]{3}[\-. ]?[0-9]{3}[\-. ]?[0-9]{4}$">
                         </label>
                     </div>
                     <div class="row-three">
