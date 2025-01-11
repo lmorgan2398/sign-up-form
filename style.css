@@ -63,6 +63,20 @@ body {
     align-items: center;
 }
 
+.image-credit {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    position:absolute;
+    bottom: 0;
+    left: 24.5%;
+}
+
+.image-credit > a:link,
+.image-credit > a:visited {
+    color: white;
+}
+
 .sign-up {
     width: 62%;
     height: 100vh;
@@ -181,16 +195,16 @@ button:hover {
     padding-top: 10px;
 }
 
-a {
+.log-in {
     text-decoration: none;
     font-weight: 700;
 }
 
-a:link,
-a:visited {
+.log-in:link,
+.log-in:visited {
     color: #596D48;
 }
 
-a:hover {
+.log-in:hover {
     color: #718b5b;
 }
